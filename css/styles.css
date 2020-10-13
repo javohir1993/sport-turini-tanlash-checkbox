@@ -1,0 +1,127 @@
+/* rubik-regular - latin */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+       url("../fonts/rubik-v11-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("../fonts/rubik-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+       url("../fonts/rubik-v11-latin-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("../fonts/rubik-v11-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 31px;
+  padding: 0;
+  margin: 0;
+  background-color: #ccc;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sports-form {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  background-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 44px;
+}
+
+.sports-form-title {
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: 500;
+}
+
+.sports-form-label {
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.sports-form-label:last-child {
+  margin-bottom: 0;
+}
+
+.sports-text-hokkey {
+  opacity: 0.5;
+}
+
+.sports-control {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+}
+
+.sports-input:focus + .sports-control {
+  box-shadow: 0px 0px 0px 3px #0E85F3;
+}
+
+.sports-input:checked + .ping-pong {
+  background-image: url("../img/table-tennis.png");
+}
+
+.sports-input:checked + .basketball {
+  background-image: url("../img/basketball-ball.png");
+}
+
+.sports-input:checked + .volleyball {
+  background-image: url("../img/volleyball-ball.png");
+}
+
+.sports-input + .hockey {
+  background-image: url("../img/hockey-puck.png");
+}
